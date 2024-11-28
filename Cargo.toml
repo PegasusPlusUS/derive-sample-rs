@@ -1,0 +1,17 @@
+[package]
+name = "derive-sample-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+syn = "1.0"
+quote = "1.0"
+proc-macro2 = "1.0"
+
+[[bin]]
+name = "derive-sample"
+path = "src/main.rs"
+
+[lib]
+name = "derive_sample_rs"
+proc-macro = true
